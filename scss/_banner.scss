@@ -9,7 +9,7 @@
 	.banner_inner {
 		width: 100%;
 		.home_right_img {
-			padding-top: 50px; /* Adjust this value as needed */
+			padding-top: 197px;
 			@media (max-width: 1480px) {
 				img {
 					max-width: 100%;
@@ -17,38 +17,29 @@
 				}
 			}
 			@media (max-width: 991px) {
-				padding-top: 0;
-				display: block;
-				text-align: center;
-				img {
-					max-width: 90%; /* Adjust this value as needed */
-					height: auto;
-				}
+				display: none;
 			}
 		}
-		
 		.col-lg-7 {
 			vertical-align: middle;
 			align-self: center;
 		}
-		
 		.banner_content {
 			text-align: left;
 			@media (max-width: 991px) {
-				margin-top: 100px; /* Adjust this value as needed */
+				margin-top: 150px;
 			}
 			h3 {
-				font-size: 30px; /* Adjust this value as needed */
+				font-size: 40px;
 				margin-bottom: 20px;
 				position: relative;
 				&:after {
 					content: '';
-					width: 60%; /* Adjust this value as needed */
+					width: 410px;
 					height: 2px;
 					position: absolute;
 					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+					left: 23%;
 					background: $title-color;
 					@media (max-width: 575px) {
 						display: none;
@@ -57,26 +48,27 @@
 			}
 			h1 {
 				margin-top: 20px;
-				font-size: 50px; /* Adjust this value as needed */
+				font-size: 70px;
 				line-height: 60px;
 				margin-bottom: 25px;
 				@media (max-width: 1024px) {
-					font-size: 40px; /* Adjust this value as needed */
+					font-size: 60px;
 				}
 				@media (max-width: 767px) {
-					font-size: 30px; /* Adjust this value as needed */
+					font-size: 50px;
 				}
 			}
 			h5 {
-				font-size: 20px; /* Adjust this value as needed */
+				font-size: 24px;
 				margin-bottom: 35px;
 			}
 			.primary_btn {
 				margin-right: 20px;
 			}
-		
-}
+		}
 	}
+}
+
 .banner_area {
 	position: relative;
 	z-index: 1;
@@ -143,6 +135,6 @@
 		}
 	}
 }
-	}
+
 /* End Home Banner Area css
 ============================================================================================ */

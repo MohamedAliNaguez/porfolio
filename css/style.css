@@ -357,11 +357,7 @@ button:focus {
           height: auto; } }
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .home_right_img {
-          padding-top: 0;
-				display: block;
-				text-align: center;
-          max-width: 80%;
-          height: auto; } }
+          display: none; } }
     .home_banner_area .banner_inner .col-lg-7 {
       vertical-align: middle;
       align-self: center; }
@@ -2456,10 +2452,7 @@ h6 {
           height: auto; } }
     @media (max-width: 991px) {
       .about_area .about_img {
-        display:none; } }
-        @media (max-width: 450px) {
-          .about_area .about_img {
-           display : none;}
+        display: none; } }
 
 /* End About Us Area css
 ============================================================================================ */
@@ -3009,8 +3002,7 @@ h6 {
     margin-top: 0; }
 
   .home_right_img {
-    max-width: 100%;
-          height: auto; } }
+    display: none; }
 
   /* Footer Area css
   ============================================================================================ */
