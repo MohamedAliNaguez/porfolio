@@ -357,7 +357,10 @@ button:focus {
           height: auto; } }
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .home_right_img {
-          max-width: 50%;
+          padding-top: 0;
+				display: block;
+				text-align: center;
+          max-width: 80%;
           height: auto; } }
     .home_banner_area .banner_inner .col-lg-7 {
       vertical-align: middle;
@@ -2453,12 +2456,10 @@ h6 {
           height: auto; } }
     @media (max-width: 991px) {
       .about_area .about_img {
-        max-width: 50%;
-        height: auto; } }
+        display:none; } }
         @media (max-width: 450px) {
           .about_area .about_img {
-            max-width: 30%;
-          height: auto; } }
+           display : none;}
 
 /* End About Us Area css
 ============================================================================================ */
