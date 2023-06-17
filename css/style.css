@@ -2456,12 +2456,10 @@ h6 {
           height: auto; } }
     @media (max-width: 991px) {
       .about_area .about_img {
-        max-width: 50%;
-        height: auto; } }
+        display:none; } }
         @media (max-width: 450px) {
           .about_area .about_img {
-            max-width: 30%;
-          height: auto; } }
+           display : none;}
 
 /* End About Us Area css
 ============================================================================================ */
