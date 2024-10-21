@@ -10,7 +10,7 @@ pipeline {
         stage('Récupération du code source') {
             steps {
                 // Clone le code source à partir du référentiel Git configuré dans Jenkins.
-                git branch: 'main', url: 'https://github.com/votre-utilisateur/votre-repo.git'
+                git branch: 'main', url: 'https://github.com/MohamedAliNaguez/porfolio.git'
             }
         }
 
