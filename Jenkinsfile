@@ -2,21 +2,24 @@ pipeline {
     agent any
 
     triggers {
-        // Déclenche le pipeline dès qu'un changement est détecté dans Git.
-        pollSCM('* * * * *') // Vérifie le dépôt chaque minute, mais peut être remplacé par des Webhooks pour éviter une surcharge du serveur
+        // Temporarily disabling polling for testing. Uncomment when using pollSCM.
+        // pollSCM('H/5 * * * *') // Polls every 5 minutes. Replace with webhook later.
     }
 
     stages {
         stage('Récupération du code source') {
             steps {
-                // Clone le code source à partir du référentiel Git configuré dans Jenkins.
+                // Clone the code source from the Git repository.
+                // If your repository is private, ensure to use the 'credentialsId' below.
                 git branch: 'main', url: 'https://github.com/MohamedAliNaguez/porfolio.git'
+                // For private repos, add the credentialsId as follows:
+                // git branch: 'main', url: 'https://github.com/MohamedAliNaguez/porfolio.git', credentialsId: 'your-credentials-id'
             }
         }
 
         stage('Affichage de la date système') {
             steps {
-                // Affiche la date et l'heure actuelle du système.
+                // Display the current system date.
                 script {
                     def date = new Date()
                     echo "La date actuelle est : ${date}"
